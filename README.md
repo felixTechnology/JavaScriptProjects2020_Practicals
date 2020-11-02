@@ -1,0 +1,2 @@
+# JavaScriptProjects2020_Practicals
+Practicalizing everything into Project
