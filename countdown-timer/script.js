@@ -11,11 +11,11 @@
 * seconds
 * */
 
- const daysEl = document.getElementById('days');
- const  hoursEl = document.getElementById('hours');
- const  minsEl = document.getElementById('mins');
- const  secondsEl = document.getElementById('seconds');
- 
+ const daysEl = document.getElementById('days');/*12*/
+ const  hoursEl = document.getElementById('hours');/*13*/
+ const  minsEl = document.getElementById('mins');/*14*/
+ const  secondsEl = document.getElementById('seconds');/*15*/
+
 const newYears = '1 Jan 2021';/*1*/
 
 /*Have your function countdown*/
@@ -28,13 +28,17 @@ function countdown() {
     /*const days = (seconds /3600/24)*/
     const days = Math.floor(totalSeconds / 3600 /24);/*8. */
 
-    const hours = Math.floor(totalSeconds / 3600 ) % 24;
+    const hours = Math.floor(totalSeconds / 3600 ) % 24;/*9*/
 
-    const minutes = Math.floor(totalSeconds / 60) % 60;
+    const minutes = Math.floor(totalSeconds / 60) % 60;/*10*/
 
-    const  seconds = Math.floor(totalSeconds )% 60;
+    const  seconds = Math.floor(totalSeconds )% 60;/*11*/
 
 
+    daysEl.innerHTML =days;
+    hoursEl.innerHTML =hours;
+    minsEl.innerHTML = minutes;
+    secondsEl.innerHTML =seconds;
 
 
 
