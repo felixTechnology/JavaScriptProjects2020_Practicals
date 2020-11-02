@@ -12,6 +12,35 @@ body{
     font-family: "Poppins", sans-serif ;/*4*/
     background-size: cover;/*6*/
     background-position: center center;/*7*/
+    display: flex; /*8*/
+    flex-direction: column;/*9*/
+    align-content: center;/*10*/
+    align-items: center;/*11*/
     min-height: 100vh;/*5*/
     margin: 0; /*3*/
 }
+
+h1{
+    font-size: 4rem;/*13*/
+/*    margin-top: -1rem;!*14*!*/
+}
+
+.countdown-container{/*12*/
+
+    display: flex;
+
+}
+
+.big-text{/*15*/
+    font-size: 6rem;/*16*/
+    line-height: 1;/*17*/
+    margin: 0 2rem;/*18*/
+}
+
+.countdown-el{/*18*/
+    text-align: center;/*19*/
+}
+.countdown-el span{/*18*/
+    font-size: 1.5rem;
+}
+
