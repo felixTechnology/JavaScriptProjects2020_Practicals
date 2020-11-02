@@ -14,24 +14,27 @@ body{
     background-position: center center;/*7*/
     display: flex; /*8*/
     flex-direction: column;/*9*/
-    align-content: center;/*10*/
+   /* align-content: center;!*10*!*/
     align-items: center;/*11*/
     min-height: 100vh;/*5*/
     margin: 0; /*3*/
 }
 
 h1{
+    font-weight: normal;/*22*/
     font-size: 4rem;/*13*/
-/*    margin-top: -1rem;!*14*!*/
+    margin-top: 5rem;/*23*/
+
 }
 
 .countdown-container{/*12*/
 
-    display: flex;
+    display: flex;/*24*/
 
 }
 
 .big-text{/*15*/
+    font-weight: bold;/*21*/
     font-size: 6rem;/*16*/
     line-height: 1;/*17*/
     margin: 0 2rem;/*18*/
@@ -40,7 +43,7 @@ h1{
 .countdown-el{/*18*/
     text-align: center;/*19*/
 }
-.countdown-el span{/*18*/
-    font-size: 1.5rem;
+.countdown-el span{/*20*/
+    font-size: 1.3rem;/*25*/
 }
 
