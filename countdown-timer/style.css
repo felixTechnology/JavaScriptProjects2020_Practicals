@@ -30,6 +30,9 @@ h1{
 .countdown-container{/*12*/
 
     display: flex;/*24*/
+    /*Making it mobile responsive*/
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
 
@@ -37,7 +40,7 @@ h1{
     font-weight: bold;/*21*/
     font-size: 6rem;/*16*/
     line-height: 1;/*17*/
-    margin: 0 2rem;/*18*/
+    margin: 1rem 2rem;/*18*/
 }
 
 .countdown-el{/*18*/

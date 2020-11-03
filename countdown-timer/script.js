@@ -16,7 +16,7 @@
  const  minsEl = document.getElementById('mins');/*14*/
  const  secondsEl = document.getElementById('seconds');/*15*/
 
-const newYears = '1 Jan 2021';/*1*/
+const newYears = '7 Dec 2020';/*1*/
 
 /*Have your function countdown*/
 
@@ -35,15 +35,23 @@ function countdown() {
     const  seconds = Math.floor(totalSeconds )% 60;/*11*/
 
 
-    daysEl.innerHTML =days;
-    hoursEl.innerHTML =hours;
-    minsEl.innerHTML = minutes;
-    secondsEl.innerHTML =seconds;
+   /* daysEl.innerHTML =days; /!*12*!/
+    hoursEl.innerHTML =hours;/!*13*!/
+    minsEl.innerHTML = minutes;/!*14*!/
+    secondsEl.innerHTML =seconds;/!*15*!/*/
 
-
-
+    daysEl.innerHTML = days; /*12*/
+    hoursEl.innerHTML =formatTime(hours);/*13*/
+    minsEl.innerHTML = formatTime(minutes);/*14*/
+    secondsEl.innerHTML = formatTime(seconds);/*15*/
 
     //console.log(days, hours,minutes,seconds); /*4.logging in browser to check output..this will give us in millisecond 5100606000*/
+
+}
+
+function formatTime(time) { /*16*/
+
+    return time < 10 ? (`0${time}`) : time; /*17 if we have less than 10 seconds remaining we display 0 */
 
 }
 countdown();/*5*/
