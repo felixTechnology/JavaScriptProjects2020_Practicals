@@ -54,4 +54,27 @@ const quizData = [
 
 
 
-]
+];
+
+/*we need to load the questions from html and we will target them through below*/
+const questionEl = document.getElementById("question");/*4*/
+const a_text = document.getElementById("a_text");/*5*/
+const b_text = document.getElementById("a_text");/*6*/
+const c_text = document.getElementById("a_text");/*7*/
+const  d_text = document.getElementById("a_text");/*8*/
+
+
+/*We add the REACT JS*/
+
+/*Keeping Track of current question*/
+let currentQuiz = 0; //giving it zero index /*1*/
+
+/*load quiz: The function will be called everything user submit*/
+loadQuiz();/*2*/
+
+function loadQuiz() {/*3*/
+    const  currentQuizData = quizData[currentQuiz];
+
+   questionEl.innerHTML = currentQuizData.question;
+
+}
