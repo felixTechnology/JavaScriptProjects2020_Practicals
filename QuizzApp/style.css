@@ -36,6 +36,8 @@ body{
 }
 
 h2{/*33*/
+    padding: 1rem;
+    text-align: center;
     margin: 0;/*34*/
 }
 
@@ -76,4 +78,9 @@ button{/*20*/
 
 button:hover{/*30*/
     background-color: #732d91;/*31*/
+}
+
+button:focus{
+    background-color: #732d91;
+    outline: none;
 }
