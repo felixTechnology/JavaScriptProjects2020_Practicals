@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css"><!--//1.-->
-    <script src="script.js" defer></script> <!--//2. introduce defer for placing it here-->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
 </head>
 <body>
-     <h1> Ghana's 2020 Election </h1> <!--3-->
+
 
        <!---->
        <div class="quiz-container"><!--1-->
+           <div class="quiz-header"><!--10-->
+
+               <h2>Question Text</h2><!--3-->
+
+               <ul> <!--4.ul>li*4>input+label-->
+                   <li><input type="radio" id="a" name="answer"><label for="a">Question</label></li><!--5-->
+                   <li><input type="radio" id="b" name="answer"><label for="b">QQuestion</label></li><!--6-->
+                   <li><input type="radio" id="c" name="answer"><label for="c">Question</label></li><!--7-->
+                   <li><input type="radio" id="d" name="answer"><label for="d">Question</label></li><!--8-->
+               </ul>
+
+
+
+           </div>
+
+           <button> Submit </button> <!--2-->
 
        </div>
 </body>

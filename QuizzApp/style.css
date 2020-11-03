@@ -8,45 +8,68 @@
 
 
 body{
-    background-image: url("fabian-mardi-snow.jpg");
-    font-family: "Poppins", sans-serif ;/*4*/
-    background-size: cover;/*6*/
-    background-position: center center;/*7*/
-    display: flex; /*8*/
-    flex-direction: column;/*9*/
-   /* align-content: center;!*10*!*/
-    align-items: center;/*11*/
+    background-color: #b8c6db;/*2. Copy from: https://www.eggradients.com/?73afe765_page=3*/
+    /*background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);*//*2a. Copy from: https://www.eggradients.com/?73afe765_page=3*/
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 100%);
+    font-family: "Poppins",sans-serif;/*3*/
+    margin: 0;/*4*/
     min-height: 100vh;/*5*/
-    margin: 0; /*3*/
-}
-
-h1{
-    font-weight: normal;/*22*/
-    font-size: 4rem;/*13*/
-    margin-top: 5rem;/*23*/
+    justify-content: center;/*6*/
+    align-items: center;/*7*/
+    display: flex;/*8*/
 
 }
 
-.countdown-container{/*12*/
+.quiz-container{/*9*/
+    background-color: #fff;/*10*/
+    /*width: 400px;!*11*!*/
+    width: 600px;/*11*/
+   /* box-shadow: 0 0 10px 5px rgba(0,0,0,0.1);!*12*!*/
+    box-shadow: 0 0 10px 2px rgba(100,100,100,0.1);/*12*/
+    overflow: hidden;/*29*/
+    border-radius: 10px;/*13*/
+    max-width: 100%;/*19*/
+}
+.quiz-header{ /*14*/
+    /*padding: 2rem;*//*15*/
+    padding: 4rem;
+}
 
-    display: flex;/*24*/
-    /*Making it mobile responsive*/
-    flex-wrap: wrap;
-    justify-content: center;
+h2{/*33*/
+    margin: 0;/*34*/
+}
+
+ul{ /*16*/
+
+    list-style: none;/*17*/
+    padding: 0;/*18*/
+
+}/*16*/
+
+ul li{ /*35*/
+    /*font-size: 1.1rem;*//*37*/
+    font-size: 1.1rem;
+    margin: 1rem 0;/*36*/
+   /* font-weight: bold;!*38*!*/
+}
+
+
+button{/*20*/
+    background-color: #8e44ad;/*21 https://flatuicolors.com/palette/defo*/
+    border: none;/*27*/
+    color: white;/*25*/
+    cursor: pointer;/*32*/
+    display: block;/*22*/
+    font-family: inherit;/*26*/
+    /*font-size: 1.5rem;*//*28*/
+    font-size: 1.5rem;
+    width: 100%;/*23*/
+    /*padding: 2rem;*//*24*/
+    padding: 1.3rem;
+
 
 }
 
-.big-text{/*15*/
-    font-weight: bold;/*21*/
-    font-size: 6rem;/*16*/
-    line-height: 1;/*17*/
-    margin: 1rem 2rem;/*18*/
+button:hover{/*30*/
+    background-color: #732d91;/*31*/
 }
-
-.countdown-el{/*18*/
-    text-align: center;/*19*/
-}
-.countdown-el span{/*20*/
-    font-size: 1.3rem;/*25*/
-}
-
