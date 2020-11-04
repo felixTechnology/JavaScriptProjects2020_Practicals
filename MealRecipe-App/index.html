@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="style.css"><!--//1.-->
+    <script src="script.js" defer></script> <!--//2. introduce defer for placing it here-->
+
 </head>
 <body>
+
+    <div class="mobile-container"><!--1-->
+
+        <header><!--2-->
+            <input type="text"><!--3-->
+            <button id="search">Search</button><!--4-->
+        </header>
+    </div>
+      <div class="fav-container"><!--5-->
+          <h3>Favourite Meal</h3><!--6-->
+           <!--ul>li*3>img+span--><!--7-->
+          <ul>
+              <li><img src="https://www.themealdb.com/images/ingredients/Lime.png" alt=""><span>Lime</span></li>
+              <li><img src="https://www.themealdb.com/images/media/meals/llcbn01574260722.jpg/preview" alt=""><span>Ndomie</span></li>
+              <li><img src="https://www.themealdb.com/images/media/meals/8x09hy1560460923.jpg" alt=""><span>Lasagna</span></li>
+          </ul>
+          <!--ul>li*3>img+span--><!--7-->
+      </div>
 
 </body>
 </html>
